@@ -1,4 +1,15 @@
 .nosotros{
     background-color: black;
     color: white;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.nosotrosTexto {
+    font-size: 20px;
+    text-align: center; /* Centrar horizontalmente el texto */
+    padding: 50px; /* Espaciado interno */
+    width: 50%;
 }
