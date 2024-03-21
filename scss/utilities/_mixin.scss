@@ -1,8 +1,5 @@
-/*Simplificar propiedades o codigos que se repiten muchas veces*/
-/*@mixin flex($flexDirection, $alignItems, $justifyContent){
+@mixin flexCentrado {
     display: flex;
-    flex-direction: $flex-direction;
-    justify-content: $justifyContent;
-    align-items: $alignItems;
-}*/
-//@include flex(column, center, center) 
+    justify-content: center;
+    align-items: center;
+}

@@ -5,26 +5,20 @@
   box-sizing: border-box;
 }
 
-/*Simplificar propiedades o codigos que se repiten muchas veces*/
-/*@mixin flex($flexDirection, $alignItems, $justifyContent){
-    display: flex;
-    flex-direction: $flex-direction;
-    justify-content: $justifyContent;
-    align-items: $alignItems;
-}*/
-/*Permiten copiar y pegar código de forma sencilla 
-%estilos{
-    background-color: orange;
-    color: white;
-    font-size: 20px;
+body {
+  background-color: rgb(0, 0, 5);
+  color: white;
 }
 
-@extend %estilos; 
-*/
+.contactoTitulo, .tituloReglas, .categoria h2, header nav, header .nombreSitio {
+  font-family: "Protest Strike", sans-serif;
+  font-style: normal;
+}
+
 header {
   display: flex;
   align-items: center;
-  background-color: black;
+  background-color: rgb(0, 0, 5);
 }
 header .logoPagina {
   display: flex;
@@ -34,22 +28,18 @@ header .logoPagina {
 }
 header .nombreSitio {
   margin-left: 10px;
-  font-family: "Protest Strike", sans-serif;
   font-weight: 400;
-  font-style: normal;
   font-size: 50px;
   justify-content: center;
   color: white;
   -webkit-text-stroke-width: 2px; /* Ancho del contorno */
-  -webkit-text-stroke-color: black; /* Color del contorno */
+  -webkit-text-stroke-color: rgb(0, 0, 5); /* Color del contorno */
 }
 header .logo {
   width: 70px;
 }
 header nav {
   margin-left: auto;
-  font-family: "Protest Strike", sans-serif;
-  font-style: normal;
   font-size: 25px;
   height: 100%; /* Ajustar el tamaño del nav al 100% de la altura del encabezado */
 }
@@ -72,11 +62,6 @@ header nav ul {
   padding: 0;
 }
 
-.index {
-  background-color: black;
-  color: white;
-}
-
 .imagenPortada {
   width: 100%;
 }
@@ -86,14 +71,12 @@ header nav ul {
 }
 
 .galeria {
-  background-color: black;
-  color: white;
   padding-top: 20px; /*Separa el main del header sin mostrar una franja blanca como ocurría con margin-top*/
 }
 
 .categorias {
   padding: 20px;
-  background-color: black;
+  background-color: rgb(0, 0, 5);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 400px);
@@ -110,11 +93,10 @@ header nav ul {
 }
 
 .categoria {
-  display: flex; /* Usa flexbox para alinear contenido */
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column; /* Alinea los elementos en una columna */
-  background-color: #f0f0f0; /* Color de fondo de las tarjetas */
   border-radius: 10px; /* Bordes redondeados */
   padding: 20px; /* Espaciado interno */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
@@ -134,8 +116,6 @@ header nav ul {
   margin-bottom: 50px;
 }
 .categoria h2 {
-  font-family: "Protest Strike", sans-serif;
-  font-style: normal;
   color: white;
   -webkit-text-stroke-width: 0.5px; /* Ancho del contorno */
   -webkit-text-stroke-color: black; /* Color del contorno */
@@ -148,11 +128,6 @@ header nav ul {
   margin-bottom: 10px;
 }
 
-.reglas {
-  background-color: black;
-  color: white;
-}
-
 .col {
   padding-bottom: 30px;
 }
@@ -163,8 +138,6 @@ header nav ul {
 .tituloReglas {
   padding-top: 50px;
   padding-bottom: 30px;
-  font-family: "Protest Strike", sans-serif;
-  font-style: normal;
   font-size: 45px;
 }
 
@@ -173,12 +146,10 @@ header nav ul {
 }
 
 .nosotros {
-  background-color: black;
-  color: white;
   padding-bottom: 20px;
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 
 .nosotrosTexto {
@@ -188,23 +159,16 @@ header nav ul {
   width: 50%;
 }
 
-.contacto {
-  background-color: black;
-  color: white;
-}
-
 .contactoTitulo {
   text-align: center;
   padding: 20px;
-  font-family: "Protest Strike", sans-serif;
-  font-style: normal;
   font-size: 45px;
 }
 
 .formulario {
   display: flex;
-  justify-content: center; /* Para centrar horizontalmente */
-  align-items: center; /* Para centrar verticalmente */
+  justify-content: center;
+  align-items: center;
   height: auto;
   padding: 50px;
   font-family: "Courier New", Courier, monospace;
@@ -230,7 +194,7 @@ header nav ul {
 
 footer {
   display: flex;
-  background-color: black;
+  background-color: rgb(0, 0, 5);
 }
 footer a {
   text-decoration: none;

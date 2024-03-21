@@ -1,12 +1,10 @@
 .galeria{
-    background-color: black;
-    color: white;
     padding-top: 20px;/*Separa el main del header sin mostrar una franja blanca como ocurría con margin-top*/
 }
 
 .categorias {
     padding: 20px;
-    background-color: black;
+    background-color: $colorDeFondo;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 400px);
@@ -27,11 +25,8 @@
 }
 
 .categoria {
-    display: flex; /* Usa flexbox para alinear contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
+    @include flexCentrado;
     flex-direction: column; /* Alinea los elementos en una columna */
-    background-color: #f0f0f0; /* Color de fondo de las tarjetas */
     border-radius: 10px; /* Bordes redondeados */
     padding: 20px; /* Espaciado interno */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
@@ -54,8 +49,7 @@
     }
 
     h2 {
-        font-family: "Protest Strike", sans-serif;
-        font-style: normal;
+        @extend %fuente;
         color: white;
         -webkit-text-stroke-width: 0.5px; /* Ancho del contorno */
         -webkit-text-stroke-color: black; /* Color del contorno */

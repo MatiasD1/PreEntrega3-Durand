@@ -1,7 +1,7 @@
 header {
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: $colorDeFondo;
 
     .logoPagina{
         display: flex;
@@ -11,14 +11,13 @@ header {
     }
     .nombreSitio {
         margin-left: 10px;
-        font-family: "Protest Strike", sans-serif;
+        @extend %fuente;
         font-weight: 400;
-        font-style: normal;
         font-size: 50px;
         justify-content: center;
         color: white;
         -webkit-text-stroke-width: 2px; /* Ancho del contorno */
-        -webkit-text-stroke-color: black; /* Color del contorno */
+        -webkit-text-stroke-color: $colorDeFondo; /* Color del contorno */
     }
     .logo{
         width: 70px; 
@@ -26,8 +25,7 @@ header {
 
     nav {
         margin-left: auto;
-        font-family: "Protest Strike", sans-serif;
-        font-style: normal;
+        @extend %fuente;
         font-size: 25px;
         height: 100%; /* Ajustar el tamaño del nav al 100% de la altura del encabezado */
     

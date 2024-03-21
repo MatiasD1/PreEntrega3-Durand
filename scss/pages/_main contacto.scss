@@ -1,20 +1,12 @@
-.contacto {
-    background-color: black;
-    color: white;
-}
-
 .contactoTitulo {
     text-align: center;
     padding: 20px;
-    font-family: "Protest Strike", sans-serif;
-    font-style: normal;
+    @extend %fuente;
     font-size: 45px;
 }
 
 .formulario {
-    display: flex;
-    justify-content: center; /* Para centrar horizontalmente */
-    align-items: center; /* Para centrar verticalmente */
+    @include flexCentrado;
     height: auto;
     padding: 50px;
     font-family: 'Courier New', Courier, monospace;

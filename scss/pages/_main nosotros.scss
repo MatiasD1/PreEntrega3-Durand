@@ -1,10 +1,6 @@
 .nosotros{
-    background-color: black;
-    color: white;
     padding-bottom: 20px;
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    @include flexCentrado;
 }
 
 .nosotrosTexto {
