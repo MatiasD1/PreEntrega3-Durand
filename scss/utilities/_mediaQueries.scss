@@ -4,26 +4,41 @@
 
 @media only screen and (max-width: 500px) {
     header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los elementos */
     }
+
     footer {
-        justify-content: center;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los elementos */
         width: 100%;
     }
-    nav {
-        padding-top: 10px;
-        transform: scale(0.6);
-        max-width: 100%;
+
+    header .navbar-toggler {
+        display: block;
+        margin-right: 0; /* Añadir margen izquierdo automático para que el toggler se alinee a la derecha */
+    }
+    .formulario{
+        width: 100%;
+        padding: 0px;
     }
     .logoPagina, .nombreSitio {
-        transform: scale(0.9);
+        display: flex;
+        flex-direction: column; /* Alinea los elementos verticalmente */
+        align-items: center; /* Centra horizontalmente los elementos */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Centra el texto horizontalmente */
+        margin-top: 10px; /* Ajusta el margen superior si es necesario */
+    }
+
+    input, label, textarea, .contactoTitulo {
+
         max-width: 100%;
     }
-    input, textarea, .contactoTitulo {
-        width: 80%;
-        max-width: 100%;
+
+    .nosotrosTexto{
+        padding: 40px;
+        min-width: 320px;
+        text-align: justify;
     }
 }
-

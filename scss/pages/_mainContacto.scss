@@ -1,3 +1,8 @@
+.header2 .nav-container {
+    all: unset;
+}
+
+
 .contactoTitulo {
     text-align: center;
     padding: 20px;
@@ -16,7 +21,8 @@
     form {
         background-color: white;
         width: 50%; /* Ancho del formulario */
-        max-width: 500px; /* Ancho máximo del formulario */
+        max-width: 500px;
+        min-width: 320px;
         padding: 20px; /* Espaciado interno */
         border-radius: 10px; /* Bordes redondeados */
         box-sizing: border-box; /* Ajusta el ancho y alto del formulario para incluir bordes y rellenos */

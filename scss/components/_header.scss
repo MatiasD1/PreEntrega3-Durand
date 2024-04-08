@@ -1,6 +1,6 @@
 header {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     background-color: $colorDeFondo;
 
     .logoPagina{
@@ -24,32 +24,53 @@ header {
     }
 
     nav {
-        margin-left: auto;
+
         @extend %fuente;
-        font-size: 25px;
-        height: 100%; /* Ajustar el tamaño del nav al 100% de la altura del encabezado */
-    
+        font-size: 20px;
+        
+        .pos-f-t{
+       
+            padding-right: 10px;
+            margin-top: 20px;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            z-index: 3000; /* Asegura que esté por encima de otros elementos */
+        }
+     
+        .navbar-toggler {
+            border: 1px solid grey; /* Cambia el color del borde */
+            background-color: $colorDeFondo; /* Hace que el fondo sea transparente */
+            color: black; /* Cambia el color del texto */
+            margin: 20px;
+          }
+          
+          .navbar-toggler:hover {
+            background-color: black; /* Cambia el color de fondo al pasar el mouse */
+            color: #000000; /* Cambia el color del texto al pasar el mouse */
+        
+           
+          }
+        
+          #navbarToggleExternalContent .collapse.show {
+            background-color: white; /* Cambia el color de fondo del menú */
+            height: auto; /* Permitir que el contenedor se ajuste al tamaño del contenido */
+            box-sizing: content-box;
+            
+          }
         li {
-            padding: 0 20px;
-            height: 100%; /* Ajustar el tamaño de los elementos li al 100% de la altura de la lista */
-            display: flex;
-            align-items: center;
-    
+            list-style: none; //quita el punteo de viñeta 
+            padding-bottom: 10px;
             a{
-                margin-right: 10px;
                 text-decoration: none; /* Elimina el subrayado de los enlaces */
                 color: white; /* Cambia el color del texto de los enlaces */
+                padding-right: 20px;
+                
+                
             }
         } 
         
-        ul {
-            display: flex;
-            align-items: center;
-            height: 100%; /* Ajustar el tamaño de la lista al 100% de la altura del nav */
-            margin: 0;
-            padding: 0;
-        } 
+
     
     } 
 }
-
