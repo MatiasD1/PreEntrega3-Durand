@@ -5,7 +5,11 @@
 @media only screen and (max-width: 500px) {
     header {
         display: flex;
-        justify-content: center; /* Centra horizontalmente los elementos */
+    }
+    .navbar-toggler {
+        display: block;
+        margin-right: 0; /* Añadir margen izquierdo automático para que el toggler se alinee a la derecha */
+        width: 40px;
     }
 
     footer {
@@ -13,24 +17,41 @@
         justify-content: center; /* Centra horizontalmente los elementos */
         width: 100%;
     }
-
-    header .navbar-toggler {
-        display: block;
-        margin-right: 0; /* Añadir margen izquierdo automático para que el toggler se alinee a la derecha */
+    #carouselExampleCaptions{
+        display: flex;
+        justify-content: center;
     }
+   
     .formulario{
         width: 100%;
         padding: 0px;
     }
-    .logoPagina, .nombreSitio {
+    .logoPagina .logo{
+        width: 50px;
+    }
+    header .nombreSitio {
         display: flex;
-        flex-direction: column; /* Alinea los elementos verticalmente */
+        justify-content: center;
+        flex-direction: row; /* Alinea los elementos verticalmente */
         align-items: center; /* Centra horizontalmente los elementos */
         width: 100%; /* Ocupa todo el ancho disponible */
-        text-align: center; /* Centra el texto horizontalmente */
         margin-top: 10px; /* Ajusta el margen superior si es necesario */
+        font-size: 30px;
     }
-
+    .categorias {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 400px);
+        grid-template-areas: /*Debe ajustarse a la cantidad de filas y columnas declaradas */
+            "img1"
+            "img2" 
+            "img3"
+            "img4"
+            "img5"
+            "img6"; 
+            grid-gap: 20px; /* Espacio entre las tarjetas */
+    }
     input, label, textarea, .contactoTitulo {
 
         max-width: 100%;
@@ -38,7 +59,7 @@
 
     .nosotrosTexto{
         padding: 40px;
-        min-width: 320px;
+        min-width: 380px;
         text-align: justify;
     }
 }

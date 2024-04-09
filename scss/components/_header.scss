@@ -43,6 +43,8 @@ header {
             background-color: $colorDeFondo; /* Hace que el fondo sea transparente */
             color: black; /* Cambia el color del texto */
             margin: 20px;
+            display: flex;
+            
           }
           
           .navbar-toggler:hover {

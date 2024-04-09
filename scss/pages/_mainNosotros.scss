@@ -1,11 +1,16 @@
 .nosotros{
     padding-bottom: 20px;
     @include flexCentrado;
+    flex-direction: column;
 }
-
+.nosotrosTitulo{
+    text-align: center;
+    @extend %fuente;
+    font-size: 45px;
+}
 .nosotrosTexto {
+
     font-size: 20px;
-    text-align: center; /* Centrar horizontalmente el texto */
     padding: 50px; /* Espaciado interno */
     width: 70%;
     min-width: 320px;
