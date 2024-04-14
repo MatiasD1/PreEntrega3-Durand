@@ -16,8 +16,8 @@ header {
         font-size: 50px;
         justify-content: center;
         color: white;
-        -webkit-text-stroke-width: 2px; /* Ancho del contorno */
-        -webkit-text-stroke-color: $colorDeFondo; /* Color del contorno */
+        -webkit-text-stroke-width: 2px; 
+        -webkit-text-stroke-color: $colorDeFondo; 
     }
     .logo{
         width: 70px; 
@@ -35,37 +35,37 @@ header {
             position: absolute;
             top: 50px;
             right: 10px;
-            z-index: 3000; /* Asegura que esté por encima de otros elementos */
+            z-index: 3000; 
         }
      
         .navbar-toggler {
-            border: 1px solid grey; /* Cambia el color del borde */
-            background-color: $colorDeFondo; /* Hace que el fondo sea transparente */
-            color: black; /* Cambia el color del texto */
+            border: 1px solid grey; 
+            background-color: $colorDeFondo; 
+            color: black;
             margin: 20px;
             display: flex;
             
           }
           
           .navbar-toggler:hover {
-            background-color: black; /* Cambia el color de fondo al pasar el mouse */
-            color: #000000; /* Cambia el color del texto al pasar el mouse */
+            background-color: black; 
+            color: #000000; 
         
            
           }
         
           #navbarToggleExternalContent .collapse.show {
-            background-color: white; /* Cambia el color de fondo del menú */
-            height: auto; /* Permitir que el contenedor se ajuste al tamaño del contenido */
+            background-color: white; 
+            height: auto; 
             box-sizing: content-box;
             
           }
         li {
-            list-style: none; //quita el punteo de viñeta 
+            list-style: none; 
             padding-bottom: 10px;
             a{
-                text-decoration: none; /* Elimina el subrayado de los enlaces */
-                color: white; /* Cambia el color del texto de los enlaces */
+                text-decoration: none; 
+                color: white; 
                 padding-right: 20px;
                 
                 

@@ -1,3 +1,26 @@
+.indexTitulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @extend %fuente;
+    font-size: 3.5vw; 
+    margin-top: 3%; 
+    z-index: 2500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.886);
+    white-space: nowrap;
+}
+
+.pieDeTitulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @extend %fuente;
+    font-size: 2.5vw; 
+    margin-top: 8%; 
+    z-index: 2500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .imagenPortada{
     width: 100%;
     

@@ -8,13 +8,13 @@
     }
     .navbar-toggler {
         display: block;
-        margin-right: 0; /* Añadir margen izquierdo automático para que el toggler se alinee a la derecha */
+        margin-right: 0; 
         width: 40px;
     }
 
     footer {
         display: flex;
-        justify-content: center; /* Centra horizontalmente los elementos */
+        justify-content: center; 
         width: 100%;
     }
     #carouselExampleCaptions{
@@ -32,10 +32,10 @@
     header .nombreSitio {
         display: flex;
         justify-content: center;
-        flex-direction: row; /* Alinea los elementos verticalmente */
-        align-items: center; /* Centra horizontalmente los elementos */
-        width: 100%; /* Ocupa todo el ancho disponible */
-        margin-top: 10px; /* Ajusta el margen superior si es necesario */
+        flex-direction: row; 
+        align-items: center; 
+        width: 100%; 
+        margin-top: 10px; 
         font-size: 30px;
     }
     .categorias {
@@ -43,14 +43,14 @@
         padding: 20px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 400px);
-        grid-template-areas: /*Debe ajustarse a la cantidad de filas y columnas declaradas */
+        grid-template-areas: 
             "img1"
             "img2" 
             "img3"
             "img4"
             "img5"
             "img6"; 
-            grid-gap: 20px; /* Espacio entre las tarjetas */
+            grid-gap: 20px; 
     }
     input, label, textarea, .contactoTitulo {
 
@@ -61,5 +61,11 @@
         padding: 40px;
         min-width: 380px;
         text-align: justify;
+    }
+    .reglas{
+        background-image: url('../../img/hombreSaltandoHaciaAtrasMobile.jpg');
+    }
+    .nosotros{
+        background-image: url('../../img/saltoEnBungee.png');
     }
 }

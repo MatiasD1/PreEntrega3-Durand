@@ -10,7 +10,7 @@ body {
   color: white;
 }
 
-.contactoTitulo, .nosotrosTitulo, .tituloReglas, .categoria h2, header nav, header .nombreSitio {
+.contactoTitulo, .nosotrosTitulo, .tituloReglas, .categoria h2, .galeriaTitulo, .pieDeTitulo, .indexTitulo, header nav, header .nombreSitio {
   font-family: "Protest Strike", sans-serif;
   font-style: normal;
 }
@@ -32,8 +32,8 @@ header .nombreSitio {
   font-size: 50px;
   justify-content: center;
   color: white;
-  -webkit-text-stroke-width: 2px; /* Ancho del contorno */
-  -webkit-text-stroke-color: rgb(0, 0, 5); /* Color del contorno */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(0, 0, 5);
 }
 header .logo {
   width: 70px;
@@ -47,22 +47,22 @@ header nav .pos-f-t {
   position: absolute;
   top: 50px;
   right: 10px;
-  z-index: 3000; /* Asegura que esté por encima de otros elementos */
+  z-index: 3000;
 }
 header nav .navbar-toggler {
-  border: 1px solid grey; /* Cambia el color del borde */
-  background-color: rgb(0, 0, 5); /* Hace que el fondo sea transparente */
-  color: black; /* Cambia el color del texto */
+  border: 1px solid grey;
+  background-color: rgb(0, 0, 5);
+  color: black;
   margin: 20px;
   display: flex;
 }
 header nav .navbar-toggler:hover {
-  background-color: black; /* Cambia el color de fondo al pasar el mouse */
-  color: #000000; /* Cambia el color del texto al pasar el mouse */
+  background-color: black;
+  color: #000000;
 }
 header nav #navbarToggleExternalContent .collapse.show {
-  background-color: white; /* Cambia el color de fondo del menú */
-  height: auto; /* Permitir que el contenedor se ajuste al tamaño del contenido */
+  background-color: white;
+  height: auto;
   box-sizing: content-box;
 }
 header nav li {
@@ -70,9 +70,30 @@ header nav li {
   padding-bottom: 10px;
 }
 header nav li a {
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: white; /* Cambia el color del texto de los enlaces */
+  text-decoration: none;
+  color: white;
   padding-right: 20px;
+}
+
+.indexTitulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5vw;
+  margin-top: 3%;
+  z-index: 2500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.886);
+  white-space: nowrap;
+}
+
+.pieDeTitulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5vw;
+  margin-top: 8%;
+  z-index: 2500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .imagenPortada {
@@ -84,7 +105,13 @@ header nav li a {
 }
 
 .galeria {
-  padding-top: 20px; /*Separa el main del header sin mostrar una franja blanca como ocurría con margin-top*/
+  padding-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.galeriaTitulo {
+  text-align: center;
+  font-size: 45px;
 }
 
 .categorias {
@@ -94,7 +121,7 @@ header nav li a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 400px);
   grid-template-areas: "img1 img1" "img2 img3" "img4 img4" "img5 img6";
-  grid-gap: 20px; /* Espacio entre las tarjetas */
+  grid-gap: 20px;
 }
 
 .categoria1 {
@@ -109,36 +136,43 @@ header nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Alinea los elementos en una columna */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-  width: auto; /* Ajusta el ancho del contenedor */
-  height: auto; /* Ajusta el alto del contenedor */
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: auto;
+  height: auto;
   background-image: url("https://wallpapercave.com/wp/JoFTfPX.jpg");
-  transition: transform 0.3s; /* Transición suave para el efecto de ampliación */
+  transition: transform 0.3s;
 }
 .categoria:hover {
-  transform: scale(1.05); /* Amplía la tarjeta en un 5% al hacer hover */
-  cursor: pointer; /* Cambia el cursor a una mano señalando */
+  transform: scale(1.05);
+  cursor: pointer;
 }
 .categoria img {
   width: 100%;
-  height: 80%; /* [Se corta la imagen]: Ajustando la imagen a la altura del contenedor */
-  object-fit: contain; /* Ajusta la imagen manteniendo su relación de aspecto original */
+  height: 80%;
+  object-fit: contain;
   margin-bottom: 50px;
 }
 .categoria h2 {
   color: white;
-  -webkit-text-stroke-width: 0.5px; /* Ancho del contorno */
-  -webkit-text-stroke-color: black; /* Color del contorno */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
   font-size: 30px;
-  text-align: center; /* Centra el texto */
-  margin: 0; /* Elimina el margen por defecto del título */
-  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
-  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
-  margin-top: 60px; /*** Buscar otra forma de evitar que el titulo se corte ***/
+  text-align: center;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 60px;
   margin-bottom: 10px;
+}
+
+.reglas {
+  background-image: url("../../img/hombreSaltandoHaciaAtras.jpg");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .col {
@@ -156,6 +190,7 @@ header nav li a {
 
 .reglasTitulos {
   font-size: 20px;
+  padding: 20px;
 }
 
 .nosotros {
@@ -164,25 +199,37 @@ header nav li a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("../../img/saltoEnBungee1.png");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nosotrosTitulo {
   text-align: center;
   font-size: 45px;
+  padding: 20px;
 }
 
 .nosotrosTexto {
   font-size: 20px;
-  padding: 50px; /* Espaciado interno */
+  padding: 50px;
   width: 70%;
   min-width: 320px;
   text-align: justify;
+}
+
+.contacto {
+  background-image: url("../../img/relampagosEnHorizonte.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .contactoTitulo {
   text-align: center;
   padding: 20px;
   font-size: 45px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .formulario {
@@ -193,24 +240,24 @@ header nav li a {
   padding: 50px;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .formulario form {
-  background-color: white;
-  width: 50%; /* Ancho del formulario */
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
   max-width: 500px;
   min-width: 320px;
-  padding: 20px; /* Espaciado interno */
-  border-radius: 10px; /* Bordes redondeados */
-  box-sizing: border-box; /* Ajusta el ancho y alto del formulario para incluir bordes y rellenos */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombras con desplazamiento horizontal y vertical de 0px, desenfoque de 10px y color negro con opacidad de 0.5 */
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction: column; /* Alinear los elementos del formulario en una columna */
-  justify-content: center; /* Para centrar horizontalmente */
-  align-items: center; /* Para centrar verticalmente */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .formulario form input[type=file] {
-  width: 100%; /* Ajusta el ancho del input al 100% del contenedor */
+  width: 100%;
 }
 
 footer {
@@ -236,12 +283,12 @@ footer img {
   }
   .navbar-toggler {
     display: block;
-    margin-right: 0; /* Añadir margen izquierdo automático para que el toggler se alinee a la derecha */
+    margin-right: 0;
     width: 40px;
   }
   footer {
     display: flex;
-    justify-content: center; /* Centra horizontalmente los elementos */
+    justify-content: center;
     width: 100%;
   }
   #carouselExampleCaptions {
@@ -258,10 +305,10 @@ footer img {
   header .nombreSitio {
     display: flex;
     justify-content: center;
-    flex-direction: row; /* Alinea los elementos verticalmente */
-    align-items: center; /* Centra horizontalmente los elementos */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin-top: 10px; /* Ajusta el margen superior si es necesario */
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
     font-size: 30px;
   }
   .categorias {
@@ -270,7 +317,7 @@ footer img {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 400px);
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
-    grid-gap: 20px; /* Espacio entre las tarjetas */
+    grid-gap: 20px;
   }
   input, label, textarea, .contactoTitulo {
     max-width: 100%;
@@ -279,6 +326,12 @@ footer img {
     padding: 40px;
     min-width: 380px;
     text-align: justify;
+  }
+  .reglas {
+    background-image: url("../../img/hombreSaltandoHaciaAtrasMobile.jpg");
+  }
+  .nosotros {
+    background-image: url("../../img/saltoEnBungee.png");
   }
 }
 

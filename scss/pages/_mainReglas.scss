@@ -1,3 +1,10 @@
+.reglas{
+    background-image: url('../../img/hombreSaltandoHaciaAtras.jpg');
+    background-size: cover;
+    background-position: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .col{
     padding-bottom: 30px;
    
@@ -15,4 +22,5 @@
 
 .reglasTitulos{
     font-size: 20px;
+    padding: 20px;
 }
